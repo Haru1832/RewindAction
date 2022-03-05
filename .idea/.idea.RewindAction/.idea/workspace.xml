@@ -12,12 +12,63 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/GameManager/IGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/ITimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/GameManager/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Input/IPlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Input/KeyBoardPlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/UI/UITimePresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/UI/UITimeSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/DebugCube.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/NormalCube.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerRespawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/NormalSphere.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/StopTimeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/BaseObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerTimeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/ObjectPoolingFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/ObjectType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/RewindObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/DebugObjectFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/IObjectFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/RewindTimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Other/ObjectColorControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/StopObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Object/SelectObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Other/SingletonMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/DebugCube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/NormalCube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/NormalSphere.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/RewindObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/StopObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/GameManager/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/GameManager/IGameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerRespawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Input/IPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Input/GamePadPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Input/KeyBoardPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/ObjectType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/IObjectFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/ObjectPoolingFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/ObjectFactory/DebugObjectFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/SelectObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Input/IPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Input/KeyBoardPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/ITimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/ServiceLocator/ServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Other/SingletonMonoBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerTimeController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/UI/UITimeSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/UI/UITimePresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Main/Scripts/Object/BaseObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/RewindTimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/StopTimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Main/Scripts/TimeManager/TimeManager.cs" />
       </list>
     </option>
   </component>
@@ -40,10 +91,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="27548">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="27548" />
       <method v="2" />
     </configuration>
   </component>
@@ -69,7 +120,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646379849882</updated>
-      <workItem from="1646379853773" duration="754000" />
+      <workItem from="1646379853773" duration="7733000" />
+      <workItem from="1646456951498" duration="12074000" />
     </task>
     <servers />
   </component>
@@ -78,4 +130,30 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state width="1604" height="328" key="GridCell.Tab.0.bottom" timestamp="1646466149817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1604" height="328" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1646466149817" />
+    <state width="1604" height="328" key="GridCell.Tab.0.center" timestamp="1646466149817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1604" height="328" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1646466149817" />
+    <state width="1604" height="328" key="GridCell.Tab.0.left" timestamp="1646466149817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1604" height="328" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1646466149817" />
+    <state width="1604" height="328" key="GridCell.Tab.0.right" timestamp="1646466149817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1604" height="328" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1646466149817" />
+    <state x="892" y="232" key="RiderGenerateDialog" timestamp="1646385235170">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="892" y="232" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1646385235170" />
+    <state x="775" y="138" width="1275" height="621" key="dock-window-1" timestamp="1646468048139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="138" width="1275" height="621" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1646468048139" />
+  </component>
 </project>

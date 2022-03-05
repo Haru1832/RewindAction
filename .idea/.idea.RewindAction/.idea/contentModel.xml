@@ -10,8 +10,33 @@
       <e p="Assets" t="Include">
         <e p="Main" t="Include">
           <e p="Scripts" t="Include">
+            <e p="GameManager" t="Include">
+              <e p="GameManager.cs" t="Include" />
+              <e p="GameState.cs" t="Include" />
+              <e p="IGameManager.cs" t="Include" />
+              <e p="IRespawnManager.cs" t="Include" />
+              <e p="RespawnManager.cs" t="Include" />
+            </e>
+            <e p="Input" t="Include">
+              <e p="GamePadPlayerInput.cs" t="Include" />
+              <e p="IPlayerInput.cs" t="Include" />
+              <e p="KeyBoardPlayerInput.cs" t="Include" />
+            </e>
             <e p="Object" t="Include">
               <e p="BaseObject.cs" t="Include" />
+              <e p="DebugCube.cs" t="Include" />
+              <e p="NormalCube.cs" t="Include" />
+              <e p="NormalSphere.cs" t="Include" />
+              <e p="RewindObject.cs" t="Include" />
+              <e p="SelectObject.cs" t="Include" />
+              <e p="StopObject.cs" t="Include" />
+            </e>
+            <e p="ObjectFactory" t="Include">
+              <e p="DebugObjectFactory.cs" t="Include" />
+              <e p="InstantePoint.cs" t="Include" />
+              <e p="IObjectFactory.cs" t="Include" />
+              <e p="ObjectPoolingFactory.cs" t="Include" />
+              <e p="ObjectType.cs" t="Include" />
             </e>
             <e p="Other" t="Include">
               <e p="ExplosionSample1.cs" t="Include" />
@@ -20,7 +45,23 @@
               <e p="NormalTimeObject.cs" t="Include" />
               <e p="ObjectColorControl.cs" t="Include" />
               <e p="PointInTime.cs" t="Include" />
+              <e p="SingletonMonoBehaviour.cs" t="Include" />
               <e p="SlowTimeButton.cs" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="PlayerMover.cs" t="Include" />
+              <e p="PlayerRespawner.cs" t="Include" />
+              <e p="PlayerTimeController.cs" t="Include" />
+            </e>
+            <e p="TimeManager" t="Include">
+              <e p="ITimeManager.cs" t="Include" />
+              <e p="RewindTimeManager.cs" t="Include" />
+              <e p="StopTimeManager.cs" t="Include" />
+              <e p="TimeManager.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="UITimePresenter.cs" t="Include" />
+              <e p="UITimeSlider.cs" t="Include" />
             </e>
           </e>
         </e>
