@@ -58,12 +58,12 @@ public class PlayerTimeController : MonoBehaviour
         {
             if (!obj.isStopped)
             {
-                obj.Stop();
+                //obj.Stop();
                 _timeManager.StopObject(obj);
             }
             else
             {
-                obj.UnStop();
+                //obj.UnStop();
                 _timeManager.UnStopObject(obj);
             }
             
@@ -76,12 +76,12 @@ public class PlayerTimeController : MonoBehaviour
         {
             if (!obj.isRewinded)
             {
-                obj.Rewind();
+                //obj.Rewind();
                 _timeManager.RewindObject(obj);
             }
             else
             {
-                obj.UnRewind();
+                //obj.UnRewind();
                 _timeManager.UnRewindObject(obj);
             }
             

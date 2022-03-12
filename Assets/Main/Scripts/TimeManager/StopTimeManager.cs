@@ -9,42 +9,29 @@ public class StopTimeManager : MonoBehaviour
 {
     private List<BaseObject> _stoppedObject;
     
-    [SerializeField]
-    private float subStopValue=0.1f;
-    [SerializeField]
-    private float addStopValue=0.2f;
     
     [SerializeField]
-    private float stopRemainingMaxTime=100;
-    public float StopRemainingMaxTime => stopRemainingMaxTime;
+    private TimeManagerScriiptableObject stopValues;
+
+
+    private float StopRemainingTime;
+
     
-    
-    public float StopRemainingTime { get; private set; }
     
     // Start is called before the first frame update
     void Start()
     {
         _stoppedObject=new List<BaseObject>();
-        StopRemainingTime = stopRemainingMaxTime;
+        StopRemainingTime = stopValues.remainingMaxTime;
         
         ManageStopRemainingTime();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public float GetStopTime()
     {
         return StopRemainingTime;
     }
-
-    public float GetStopMaxTime()
-    {
-        return StopRemainingMaxTime;
-    }
+    
 
     public void AddObject(BaseObject obj)
     {
@@ -63,9 +50,9 @@ public class StopTimeManager : MonoBehaviour
             .Where(_ => _stoppedObject.Any())
             .Subscribe(_ =>
             {
-                var subValue = subStopValue * _stoppedObject.Count;
+                var subValue = stopValues.subTimeValue * _stoppedObject.Count;
                 StopRemainingTime -= subValue;
-                StopRemainingTime = StopRemainingTime < 0 ? 0 : StopRemainingTime;
+                StopRemainingTime = Mathf.Clamp(StopRemainingTime, 0, stopValues.remainingMaxTime);
             })
             .AddTo(this);
         
@@ -73,8 +60,8 @@ public class StopTimeManager : MonoBehaviour
             .Where(_ => !_stoppedObject.Any())
             .Subscribe(_ =>
             {
-                StopRemainingTime += addStopValue;
-                StopRemainingTime = StopRemainingTime > stopRemainingMaxTime ? stopRemainingMaxTime : StopRemainingTime;
+                StopRemainingTime += stopValues.addTimeValue;
+                StopRemainingTime = Mathf.Clamp(StopRemainingTime, 0, stopValues.remainingMaxTime);
             })
             .AddTo(this);
 

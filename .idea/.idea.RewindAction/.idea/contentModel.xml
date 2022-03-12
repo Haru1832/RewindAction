@@ -53,6 +53,9 @@
               <e p="PlayerRespawner.cs" t="Include" />
               <e p="PlayerTimeController.cs" t="Include" />
             </e>
+            <e p="ScriptableObject" t="Include">
+              <e p="TimeManagerScriiptableObject.cs" t="Include" />
+            </e>
             <e p="TimeManager" t="Include">
               <e p="ITimeManager.cs" t="Include" />
               <e p="RewindTimeManager.cs" t="Include" />

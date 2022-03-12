@@ -12,11 +12,6 @@ public class TimeManager :　SingletonMonoBehaviour<TimeManager>,ITimeManager
 
     private StopTimeManager _stopTimeManager;
     private RewindTimeManager _rewindTimeManager;
-    
-
-    public float RewindRemainingMaxTime => _rewindTimeManager.GetRewindMaxTime();
-
-    public float StopRemainingMaxTime => _stopTimeManager.GetStopMaxTime();
 
     public float StopRemainingTime => _stopTimeManager.GetStopTime();
     public float RewindRemainingTime => _rewindTimeManager.GetRewindTime();
@@ -33,21 +28,25 @@ public class TimeManager :　SingletonMonoBehaviour<TimeManager>,ITimeManager
 
     public void StopObject(BaseObject obj)
     {
+        obj.Stop();
         _stopTimeManager.AddObject(obj);
     }
 
     public void RewindObject(BaseObject obj)
     {
+        obj.Rewind();
         _rewindTimeManager.AddObject(obj);
     }
 
     public void UnStopObject(BaseObject obj)
     {
+        obj.UnStop();
         _stopTimeManager.RemoveObject(obj);
     }
 
     public void UnRewindObject(BaseObject obj)
     {
+        obj.UnRewind();
         _rewindTimeManager.RemoveObject(obj);
     }
 }

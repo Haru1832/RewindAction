@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class UITimePresenter : MonoBehaviour
 {
-    private TimeManager _timeManager;
+    private ITimeManager _timeManager;
+
+    [SerializeField] private TimeManagerScriiptableObject stopValues;
+    [SerializeField] private TimeManagerScriiptableObject rewindValues;
 
     [SerializeField] private UITimeSlider timeSlider;
     // Start is called before the first frame update
@@ -26,14 +29,14 @@ public class UITimePresenter : MonoBehaviour
         this.ObserveEveryValueChanged(x => x._timeManager.StopRemainingTime)
             .Subscribe(x=>
             {
-                float sliderValue = x/_timeManager.StopRemainingMaxTime;
+                float sliderValue = x/stopValues.remainingMaxTime;
                 timeSlider.UpdateStopSlider(sliderValue);
             });
         
         this.ObserveEveryValueChanged(x => x._timeManager.RewindRemainingTime)
             .Subscribe(x=>
             {
-                float sliderValue = x/_timeManager.RewindRemainingMaxTime;
+                float sliderValue = x/rewindValues.remainingMaxTime;
                 timeSlider.UpdateRewindSlider(sliderValue);
             });
     }
